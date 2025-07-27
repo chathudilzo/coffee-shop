@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${clickerScript.variable} ${playfair.variable} antialiased font-clickerScript`}
+        className={`${poppins.variable} ${clickerScript.variable} ${playfair.variable} antialiased font-clickerScript bg-white`}
       >
         <NavBar />
         {children}

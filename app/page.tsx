@@ -1,4 +1,12 @@
 import Image from "next/image";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -24,7 +32,7 @@ export default function Home() {
 
         <div></div>
       </section>
-      <section className="[font-family:var(--font-playfair)] flex flex-col md:flex-row px-6 md:px-10 lg:px-20 py-12 w-full  bg-white justify-between items-center">
+      <section className="relative [font-family:var(--font-playfair)] flex flex-col md:flex-row px-6 md:px-10 lg:px-20 py-12 w-full  bg-white justify-between items-center">
         <div className="md:w-1/2 flex-col">
           <h2 className="mb-5 text-title text-3xl font-bold">
             Discover the best cofee
@@ -49,7 +57,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="absolute top-280 left-0 ">
+        <div className="absolute bottom-0 left-0 ">
           <Image
             src={"/images/coffee_blast.svg"}
             alt="wave"
@@ -59,7 +67,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="[font-family:var(--font-playfair)] px-6 md:px-10 lg:px-20 py-12 w-full bg-white justify-center items-center">
+      <section className="relative [font-family:var(--font-playfair)] px-6 md:px-10 lg:px-20 py-12 w-full bg-white justify-center items-center">
         <h2 className="font-bold text-center text-title text-3xl mb-2">
           Enjoy new blend of cofee style
         </h2>
@@ -112,9 +120,18 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <div></div>
       </section>
 
-      <section className="[font-family:var(--font-playfair)] w-full px-6 md:px-10 lg:px-20 py-12 bg-white justify-center items-center">
+      <section className="relative [font-family:var(--font-playfair)] w-full px-6 md:px-10 lg:px-20 py-12 bg-white justify-center items-center">
+        <div className="absolute top-0 right-0">
+          <Image
+            src="/images/coffee_blast(1).svg"
+            alt="wave"
+            width={300}
+            height={300}
+          />
+        </div>
         <h2 className="text-center text-3xl text-title font-bold">
           Why are we different?
         </h2>
@@ -172,7 +189,7 @@ export default function Home() {
       </section>
       <section
         style={{ backgroundImage: "url('/images/Rectangle 14.svg')" }}
-        className="relative [font-family:var(--font-playfair)] w-full py-12 px-6 md:px-10 lg:px-20 bg-white items-center flex flex-col md:flex-row justify-between "
+        className="relative [font-family:var(--font-playfair)] w-full pt-12 pb-20 px-6 md:px-10 lg:px-20 bg-white items-center flex flex-col md:flex-row justify-between "
       >
         <div className="absolute inset-0 bg-primary/30 z-0"></div>
         <div className="relative z-10 max-w-xl text-center md-text-left flex flex-col ">
@@ -196,6 +213,158 @@ export default function Home() {
             alt="cup"
             width={300}
             height={500}
+          />
+        </div>
+      </section>
+
+      <section className="[font-family:var(--font-playfair)] relative px-6 md:px-10 lg:px-20 pt-12 pb-20 justify-center items-center bg-white">
+        <h2 className="text-3xl text-title font-bold text-center">
+          Our coffee perfection feedback
+        </h2>
+        <p className="text-black text-center">
+          Our customers has amazing things to say about us
+        </p>
+
+        <div className="p-15 mt-5 relative bg-[#F9C06A] max-w-3xl mx-auto">
+          <Image
+            src="/images/ups.svg"
+            alt="ups"
+            width={50}
+            height={50}
+            className="absolote left-10 top-10"
+          />
+
+          <p className="text-gray-600 text-center text-sm my-5">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset.....
+          </p>
+          <h3 className="text-title font-semibold text-2xl text-center">
+            Chathura Dilshan
+          </h3>
+          <p className="text-center text-gray-600 text-sm">Coffee lover</p>
+
+          <Image
+            src="/images/profile.jpg"
+            className="rounded-full mx-auto absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 border-4 border-white"
+            alt="profile"
+            width={80}
+            height={80}
+          />
+
+          <div className="absolute top-1/2 -left-5 transform -translate-y-1/2 cursor-pointer bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition">
+            <ChevronLeft className="text-primary w-5 h-5" />
+          </div>
+
+          <div className="absolute top-1/2 -right-5 transform -translate-y-1/2 cursor-pointer bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition">
+            <ChevronRight className="text-primary w-5 h-5" />
+          </div>
+        </div>
+
+        <Image
+          src="/images/coffee_blast(2).svg"
+          className="absolute top-0 right-0"
+          alt="wave"
+          width={300}
+          height={300}
+        />
+        <Image
+          src="/images/coffee_blast(3).svg"
+          alt="wave"
+          className="absolute left-0 bottom-0"
+          width={300}
+          height={300}
+        />
+      </section>
+
+      <section
+        className=" relative [font-family:var(--font-playfair)] w-full py-12 px-6 md:px-10 lg-px-20"
+        style={{ backgroundImage: "url('/images/Rectangle 14.svg')" }}
+      >
+        <div className="absolute inset-0 bg-primary/30 z-0"></div>
+
+        <div className="relative z-10 max-w-xl mx-auto text-center">
+          <h2 className=" text-center text-3xl text-white font-semibold">
+            Subscribe to get the Latest News
+          </h2>
+          <p className=" text-center text-gray-200 text-sm">
+            Don’t miss out on our latest news, updates, tips and special offers
+          </p>
+          <div className=" flex mx-auto items-center justify-center mt-10  ">
+            <input
+              placeholder="Enter Your Email"
+              className="p-2 bg-white text-black text-sm"
+            />
+
+            <button className="text-title font-semibold text-sm p-2 bg-primary">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className=" [font-family:var(--font-playfair)] relative w-full px-6 md:px-10 lg:px-20 pt-25 pb-12 bg-amber-950">
+        <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div>
+            <h2 className="mb-4 [font-family:var(--font-clicker)] text-2xl">
+              Dilso Plaza
+            </h2>
+
+            <p className="text-xs mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+
+            <div className="flex gap-3 ">
+              <Facebook className="w-5 h-5" />
+              <Twitter className="w-5 h-5" />
+              <Instagram className="w-5 h-5" />
+              <Youtube className="w-5 h-5" />
+            </div>
+          </div>
+
+          <div>
+            <h4 className="mb-4 text-lg font-semibold">About</h4>
+            <ul className="space-y-2 text-sm text-gray-200">
+              <li>Menu</li>
+              <li>Features</li>
+              <li>News & Blogs</li>
+              <li>Help & Support</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg  mb-4 font-semibold">Company</h4>
+            <ul className="space-y-2 text-sm text-gray-200">
+              <li>How we work</li>
+              <li>Terms of service</li>
+              <li>Pricing</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg mb-4 font-semibold">Contact Us</h4>
+            <ul className="space-y-2 text-sm text-gray-200">
+              <li>Kalawana Road, Rathnapura, Sri Lanka</li>
+              <li>0112-121212</li>
+              <li>dilzoplaza@gmail.com</li>
+              <li>www.dilzoplaza.com</li>
+            </ul>
+          </div>
+        </div>
+        <div className=" absolute inset-0 z-0 bottom-0">
+          <Image
+            className="object-cover opacity-10"
+            src="/images/fotter_image.png"
+            alt="footer"
+            fill
           />
         </div>
       </section>
