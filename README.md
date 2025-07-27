@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+☕ Dilzo Plaza – A Modern Coffee Shop Website
 
-## Getting Started
+This is a beautifully designed Next.js + Tailwind CSS website for a fictional coffee shop. It showcases the brand, menu, promotions, and more — with a responsive layout and stylish animations.
+🚀 Getting Started
 
-First, run the development server:
+To run the project locally:
 
-```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit your browser:
+👉 http://localhost:3000
+📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    app/ – Main app pages and layout
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    components/ – Reusable UI components (e.g., Hero, Navbar, MenuCards)
 
-## Learn More
+    public/ – Static assets like images and SVGs
 
-To learn more about Next.js, take a look at the following resources:
+    styles/ – Tailwind and custom styles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+💡 Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    🖼️ Beautiful hero section with background images
 
-## Deploy on Vercel
+    📱 Fully responsive for mobile and desktop
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    🌗 Dark and light theme friendly
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    🔤 Google Fonts integration
+
+    ⚡ Optimized with Next.js and Tailwind CSS
+
+    📸 Uses high-quality SVG and image assets
+
+📷 Preview
+
+    You can include screenshots or a video demo here:
+
+Images:
+<img width="1440" height="782" alt="Screenshot 2025-07-27 203421" src="https://github.com/user-attachments/assets/492a1c73-536f-4adc-b592-0b5c93ce1f63" />
+
+
+
+Video:
+
+
+https://github.com/user-attachments/assets/c14016dc-ceb4-4631-b62f-f630c3060bb9
+
+
+
+
+🚀 Deployment
+
+Easily deploy this project with Vercel or any platform that supports Next.js.
+🔗 Learn More
+
+    Next.js Docs
+
+    Tailwind CSS Docs
